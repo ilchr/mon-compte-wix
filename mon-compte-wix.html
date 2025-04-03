@@ -38,7 +38,7 @@
       gap: 10px;
       width: 180px;
     }
-    .sidebar button {
+  .sidebar button {
   background-color: #111;  /* même couleur que la sidebar */
   color: #111;             /* texte noir sur fond noir */
   border: none;
@@ -46,6 +46,7 @@
   cursor: pointer;
   font-size: 16px;
 }
+
     .content {
       flex-grow: 1;
       display: flex;
@@ -309,8 +310,8 @@ function showSection(sectionId) {
     });
   }
 
-  function confirmExchange(rewardName) {
-  document.getElementById('confirmation-message').innerText = Vous n’avez pas encore assez de points pour échanger cette récompense : ${rewardName};
+ function confirmExchange(rewardName) {
+  document.getElementById('confirmation-message').innerText = `Vous n’avez pas encore assez de points pour échanger cette récompense : ${rewardName}`;
   showSection('confirmation');
 }
 </script>
